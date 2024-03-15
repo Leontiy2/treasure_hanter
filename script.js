@@ -48,7 +48,7 @@ const mapElement = document.getElementById("map")
 mapElement.addEventListener("click", (event) => {
     click++; //click = click + 1
     const answer = getDistanceHint(getDistance(event, target));
-    document.getElementById('distance').innerHTML = `Результат: ${answer}`;
+    document.getElementById('distance').innerHTML = `Результат: ${answer}`;//сформатоване виводення `a ${}`
     document.getElementById('counter').innerHTML = `Кількість ходів: ${click}`;
     if (answer === 'Пече!') {
         alert('Молодець!');
